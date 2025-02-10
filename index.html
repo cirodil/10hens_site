@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 курочек | Бот для учета яйценоскости кур</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: "Nunito", sans-serif;
+      }
+      .navbar {
+        background-color: #28a745;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: white !important;
+      }
+      .hero-section {
+        background: url("chicken-bg.png") no-repeat center center/cover;
+        color: SaddleBrown;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .btn-primary {
+        background-color: #28a745;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #218838;
+      }
+      .feature-icon {
+        font-size: 3rem;
+        color: #28a745;
+      }
+      .footer {
+        background-color: #28a745;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">🐔10 курочек | @ten_hens_bot</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Функции</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#instructions">Инструкция</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Главная страница -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>🐔 Бот для учета яйценоскости кур</h1>
+        <p class="lead">
+          Удобный инструмент для ведения статистики и анализа продуктивности
+          ваших кур.
+        </p>
+        <a href="https://t.me/ten_hens_bot" class="btn btn-primary btn-lg"
+          >Перейти в Telegram
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="30"
+            height="30"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="#29b6f6"
+              d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"
+            ></path>
+            <path
+              fill="#fff"
+              d="M33.95,15l-3.746,19.126c0,0-0.161,0.874-1.245,0.874c-0.576,0-0.873-0.274-0.873-0.274l-8.114-6.733 l-3.97-2.001l-5.095-1.355c0,0-0.907-0.262-0.907-1.012c0-0.625,0.933-0.923,0.933-0.923l21.316-8.468 c-0.001-0.001,0.651-0.235,1.126-0.234C33.667,14,34,14.125,34,14.5C34,14.75,33.95,15,33.95,15z"
+            ></path>
+            <path
+              fill="#b0bec5"
+              d="M23,30.505l-3.426,3.374c0,0-0.149,0.115-0.348,0.12c-0.069,0.002-0.143-0.009-0.219-0.043 l0.964-5.965L23,30.505z"
+            ></path>
+            <path
+              fill="#cfd8dc"
+              d="M29.897,18.196c-0.169-0.22-0.481-0.26-0.701-0.093L16,26c0,0,2.106,5.892,2.427,6.912 c0.322,1.021,0.58,1.045,0.58,1.045l0.964-5.965l9.832-9.096C30.023,18.729,30.064,18.416,29.897,18.196z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Описание функций -->
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">📋 Функции бота</h2>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="feature-icon">📊</div>
+            <h3>Статистика</h3>
+            <p>Отслеживайте яйценоскость за любой период.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="feature-icon">📈</div>
+            <h3>Графики</h3>
+            <p>Стройте графики для визуализации данных.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="feature-icon">💾</div>
+            <h3>Экспорт</h3>
+            <p>Выгружайте данные в Excel для анализа.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Инструкция -->
+    <section id="instructions" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">📖 Инструкция по использованию</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>1. Добавление записи</h3>
+            <p>Используйте команду <code>/add</code> для добавления данных.</p>
+          </div>
+          <div class="col-md-6">
+            <h3>2. Просмотр статистики</h3>
+            <p>
+              Используйте команду <code>/stats</code> для получения статистики.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">📞 Контакты</h2>
+        <div class="text-center">
+          <p>
+            По всем вопросам пишите в Telegram:
+            <a href="https://t.me/kvgorodetsky">@kvgorodetsky</a>
+          </p>
+          <p>
+            Поддержать проект:
+            <a href="https://pay.cloudtips.ru/p/142d4812"
+              >Оплатить чашку кофе ☕</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 10 hens. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
